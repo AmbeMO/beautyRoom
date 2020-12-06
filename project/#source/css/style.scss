@@ -13,10 +13,53 @@
 		margin: 0px auto;
 		border: 1px solid #000000;
 }
-@media(max-width: 970px){
+
+@media(max-width: 992px){
 	.main__img{
 		display: none;
 	}
+	.header-menu__list{
+		display: none;
+	}
+	.header-menu__street{
+		display: none;
+	}
+	.header-menu__burger{
+		cursor: pointer;
+		position: relative;
+		width: 40px;
+		height: 35px;
+		display: block;
+		// margin-left: 10px;
+		}
+		.header-menu__burger span, .header-menu__burger:after, .header-menu__burger:before{
+		    height: 3px;
+		    width: 90%;
+		    position: absolute;
+		    background: #FFFFFF;
+		    margin: 0 auto;
+		}
+			.header-menu__burger span{
+	    	top: 16px;
+			}
+			.header-menu__burger:after, .header-menu__burger:before{
+			    content: '';
+			}
+			.header-menu__burger:after{
+			    bottom: 5px;
+			}
+			.header-menu__burger:before{
+			    top: 5px;
+			}
+			.header__title h1{
+				font-size: 75px;
+				line-height: 80px;
+			}
+
+
+}
+@media(max-width: 767px){
+
 	.main{
 		background: none;// ne rabotaye
 	}
@@ -35,7 +78,8 @@ body{
 .header {
 	height: 100vh;
 	width: 100%;
-	background:url(../img/header.png), url(../img/h-bg.png);
+	background:url(../img/header1.png), url(../img/h-bg.png);
+	background-repeat: no-repeat;
 	background-position: center;
    background-size: cover;
 	color: #ffff;
@@ -93,6 +137,19 @@ body{
 	max-width: 320px;
 	@extend%blueBlock;
 	padding: 10px 0px;
+
+	&:hover{
+		background-color: #94d0e3;
+		position: relative;
+		bottom: 3px;
+		transition: all 2s;
+	}
+	&:active{
+		background-color:  #A8EAFF;
+		position: relative;
+		top: 3px;
+		transition: all 2s;
+	}
 
 }
 
