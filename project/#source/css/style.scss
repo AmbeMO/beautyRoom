@@ -16,7 +16,7 @@ body{
 .header {
 	height: 100vh;
 	width: 100%;
-	background: #000 url(../img/h-bg.png);
+	background:url(../img/header.png), url(../img/h-bg.png);
 	background-position: center;
    background-size: cover;
 	color: #ffff;
