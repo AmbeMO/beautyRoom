@@ -226,7 +226,6 @@ body{
 //////
 
 .team {
-	
 	padding: 55px 0px;
 }
 .team__title {
@@ -341,6 +340,7 @@ body{
 	height: 100%;
 	background: url(../img/EllipseBlueBig.png) 100% 10% no-repeat, url(../img/Ellipse2.png) 0% 50% no-repeat;
 	padding-top: 100px;
+	margin: 0px auto;
 }
 .contact__title{
 	text-align: center;
@@ -379,7 +379,6 @@ body{
 	background: #C0E8FF;
 	box-shadow: 0px 4.61714px 4.61714px rgba(0, 0, 0, 0.25);
 	border-radius: 10px;
-	border-radius: 10px;
 	margin: 15px;
 	padding: 15px;
 	text-align: center;
@@ -389,19 +388,15 @@ body{
 	@extend%contactHr;
 	}
 }
-.contact__instagram{
-		background: url(../img/inst.png);
-		background-position: left;
-		// background-size: cover;
-		background-repeat: no-repeat;
-		padding: 10px;
+.contact__instagram span{
+	background: url(../img/inst.png) left/10% no-repeat;
+	padding-left: 40px;
 	}
-.contact__facebook{
-	background: url(../img/face.png) left  no-repeat;
-	padding: 10px;
+.contact__facebook span{
+	background: url(../img/face.png) left/7% no-repeat;
+	padding-left: 37px;
+
 }
-.contact__instagram {}
-.contact__facebook {}
 .contact__copy {
 	font-size: 24px;
 	line-height: 26px;
@@ -417,10 +412,10 @@ body{
 
 ////////
 @media(max-width: 992px){
-	.container {
-		max-width: 992px;
-		margin: 0px auto;
-}
+// 	.container {
+// 		max-width: 992px;
+// 		margin: 0px auto;
+// }
 	.header__title {
 		padding-top: 150px;
 		& h1{
@@ -520,6 +515,98 @@ body{
 		font-size: 29px;
 		line-height: 30px;
 	}
+////////////////////////
+	.team {
+		padding: 35px 0px;
+}
+	.team__title {
+		font-size: 60px;
+		line-height: 64px;
+		padding-bottom: 20px;
+	}
+	.team__slider {}
+	.team__img {
+		max-width: 210px;
+	}
+	.team__img1 {
+		padding:20px;
+		
+	}
+	.team__name {}
+	.team__img3 {
+		padding:20px;
+	}
+	.team__name {
+		& h4{
+			font-size: 27px;
+			line-height: 29px;
+		}
+		& p {
+			font-size: 20px;
+			line-height: 21px;
+		}
+	}
+////////////////
+	.reviews {}
+	.reviews___title {
+		font-size: 60px;
+		line-height: 64px;
+	}
+	.reviews__column {}
+	.reviews__img {
+		max-width: 146px;
+	}
+	.reviews__body {
+	}
+	.reviews__name {
+		font-size: 33px;
+		line-height: 36px;
+	}
+	.reviews__text {
+
+		font-size: 23px;
+		line-height: 25px;
+	}
+//////////////////////
+	.contact {
+		background: url(../img/EllipseBlueBig.png) 100% 10%/30% no-repeat, url(../img/Ellipse2.png) 0% 50%/30% no-repeat;
+		padding-top: 60px;
+	}
+	.contact__one {
+		max-width: 291px;
+	}
+	.contact__title {
+		font-size: 26px;
+		line-height: 28px;
+	}
+	.contact__text {
+		font-size: 23px;
+		line-height: 25px;
+	}
+	.contact__two {
+		max-width: 291px;
+	}
+	.contact__instagram {
+		font-size: 26px;
+		line-height: 28px;
+	}
+	.contact__facebook {
+		font-size: 26px;
+		line-height: 28px;
+	}
+	.contact__instagram span{
+		background: url(../img/inst.png) left/10% no-repeat;
+		padding-left: 25px;
+	}
+	.contact__facebook span{
+		background: url(../img/face.png) left/7% no-repeat;
+		padding-left: 22px;
+
+}
+	.contact__copy {
+		font-size: 24px;
+		line-height: 26px;
+	}
 }
 
 @media(max-width: 767px){
@@ -554,6 +641,7 @@ body{
 	////////
 	.main{
 		background: url(../img/Ellipse2.png) 0% 0%/40% no-repeat, url(../img/Ellipse.png) 100% 100%/40% no-repeat;
+
 	}
 	.main__title {
 				padding: 20px 0px;
@@ -562,20 +650,147 @@ body{
 				line-height: 32px;
 				}
 	}
+	.main__row:last-child{
+		padding-bottom: 30px;
+	}
 	.main__body{
-				padding: 10px 5px;
-			}
-			.main-body__title{
-				max-width: 80px;
-				font-size: 13px;
-				line-height: 14px;
-			}
-			.main-body__text{
-				font-size: 11.3522px;
-				line-height: 12px;;
-				max-width: 161px;
-				padding: 15px 15px;
-			}
+		padding: 10px 5px;
+	}
+	.main-body__title{
+		max-width: 80px;
+		font-size: 13px;
+		line-height: 14px;
+	}
+	.main-body__text{
+		font-size: 11.3522px;
+		line-height: 12px;;
+		max-width: 161px;
+		padding: 15px 15px;
+	}
+////////
+	.services{
+		padding-top: 15px;
+	}
+	.services__title h2{
+		font-size: 30px;
+		line-height: 32px;
+	}
+	.services-column__title{
+		font-size: 16px;
+		line-height: 17px;
+		padding: 20px;
+	}
+	.services-title___hr{
+		max-width: 80%;
+		margin: 0px auto;
+		border: 1px solid black;
+	}
+	.services-column___hr{
+		border: 1px solid #000000;
+		max-width: 20%;
+		margin: 0px auto;
+	}
+	.services__column{
+		font-size: 13px;
+		line-height: 13px;
+	}
+////////////////////////
+	.team {
+		padding: 15px 0px;
+}
+	.team__title {
+		font-size: 30px;
+		line-height: 32px;
+		padding-bottom: 10px;
+	}
+	.team__slider {}
+	.team__img {
+		max-width: 170px;
+	}
+	.team__img1 {
+		padding:10px;
+		
+	}
+	.team__img2{
+		padding:10px;
+		
+	}
+	.team__img3 {
+		padding:10px;
+	}
+	.team__name {
+		& h4{
+			font-size: 17px;
+			line-height: 19px;
+		}
+		& p {
+			font-size: 10px;
+			line-height: 11px;
+		}
+	}
+////////////////
+	.reviews {}
+	.reviews___title {
+		font-size: 30px;
+		line-height: 22px;
+	}
+	.reviews__column {
+		padding:0px 15px;
+	}
+	.reviews__img {
+		max-width: 106px;
+	}
+	.reviews__body {
+	}
+	.reviews__name {
+		font-size: 13px;
+		line-height: 16px;
+	}
+	.reviews__text {
+
+		font-size: 13px;
+		line-height: 15px;
+	}
+//////////////////////
+	.contact {
+		background: url(../img/EllipseBlueBig.png) 100% 10%/30% no-repeat, url(../img/Ellipse2.png) 0% 50%/30% no-repeat;
+		padding-top: 30px;
+	}
+	.contact__one {
+		max-width: 251px;
+	}
+	.contact__title {
+		font-size: 16px;
+		line-height: 18px;
+	}
+	.contact__text {
+		font-size: 13px;
+		line-height: 15px;
+	}
+	.contact__two {
+		max-width: 251px;
+	}
+	.contact__instagram {
+		font-size: 16px;
+		line-height: 18px;
+	}
+	.contact__facebook {
+		font-size: 16px;
+		line-height: 18px;
+	}
+	.contact__instagram span{
+		background: url(../img/inst.png) left/10% no-repeat;
+		padding-left: 25px;
+	}
+	.contact__facebook span{
+		background: url(../img/face.png) left/7% no-repeat;
+		padding-left: 22px;
+
+}
+	.contact__copy {
+		font-size: 14px;
+		line-height: 16px;
+	}
 
 
 }
