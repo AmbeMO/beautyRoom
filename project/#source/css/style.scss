@@ -2,6 +2,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Port+Lligat+Slab&display=swap');
 @import "nullstyle.scss";
 
+%blueBlock{
+	background-color:  #A8EAFF;
+	text-align: center;
+	border-radius: 9px;
+}
+@media(max-width: 970px){
+	.main__img{
+		display: none;
+	}
+	.main__body {
+	margin: 0px auto;
+	}
+}
 
 body{
 	font-family: 'Port Lligat Slab', serif;
@@ -72,9 +85,49 @@ body{
 	line-height: 48px;
 
 	max-width: 320px;
-	background-color:  #A8EAFF;
-	text-align: center;
-	border-radius: 7px;
+	@extend%blueBlock;
 	padding: 10px 0px;
 
 }
+
+////////
+.main {
+	background: #E5E5E5;
+}
+.main__title {
+	font-size: 100px;
+	line-height: 107px;
+	text-align: center;
+
+	color: #000000;
+
+}
+.main_row {
+	display: flex;
+}
+.main__body {
+	// margin: 0px auto;
+	padding: 40px 15px;
+}
+.main-body__title {
+	font-size: 41px;
+	line-height: 44px;
+
+	color: #000000;
+
+	background-color: #BFF0FF;
+	@extend%blueBlock;
+}
+.main-body__text {
+	font-size: 34px;
+	line-height: 36px;
+	text-align: center;
+
+	color: #000000;
+
+	background-color: #FFF3F9;
+	max-width: 274px;
+	padding: 25px;
+
+}
+.main__img {}
