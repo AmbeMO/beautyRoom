@@ -206,6 +206,7 @@ body {
   line-height: 48px;
   max-width: 320px;
   padding: 10px 0px;
+  transition: all 2s;
 }
 .header__button:hover {
   background-color: #94d0e3;
